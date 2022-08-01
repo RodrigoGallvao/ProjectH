@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HeroAvMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000000000000000000001000000010000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Spine
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/Head
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/Head/Head_end
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerA1.L
+    m_Weight: 0
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerA1.L/FingerA2.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerA1.L/FingerA2.L/FingerA3.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerA1.L/FingerA2.L/FingerA3.L/FingerA3.L_end
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerB1.L
+    m_Weight: 0
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerB1.L/FingerB2.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerB1.L/FingerB2.L/FingerB3.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.L/LowArm.L/FingerB1.L/FingerB2.L/FingerB3.L/FingerB3.L_end
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerA1.R
+    m_Weight: 0
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerA1.R/FingerA2.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerA1.R/FingerA2.R/FingerA3.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerA1.R/FingerA2.R/FingerA3.R/FingerA3.R_end
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerB1.R
+    m_Weight: 0
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerB1.R/FingerB2.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerB1.R/FingerB2.R/FingerB3.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/Spine2/UpArm.R/LowArm.R/FingerB1.R/FingerB2.R/FingerB3.R/FingerB3.R_end
+    m_Weight: 1
+  - m_Path: Armature/Spine/UpLeg.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/UpLeg.L/LowLeg.L
+    m_Weight: 1
+  - m_Path: Armature/Spine/UpLeg.L/LowLeg.L/LowLeg.L_end
+    m_Weight: 1
+  - m_Path: Armature/Spine/UpLeg.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/UpLeg.R/LowLeg.R
+    m_Weight: 1
+  - m_Path: Armature/Spine/UpLeg.R/LowLeg.R/LowLeg.R_end
+    m_Weight: 1
+  - m_Path: LOWBODY
+    m_Weight: 0
