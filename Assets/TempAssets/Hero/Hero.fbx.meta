@@ -1,8 +1,20 @@
 fileFormatVersion: 2
-guid: eab8746707ced2a4f85c54391ef337cc
+guid: dc257c88c3f05714bbb8184bbf851cfd
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Idle
+  - first:
+      74: 2667949614841947897
+    second: Walk
+  - first:
+      74: 5522812681064789136
+    second: Run
+  - first:
+      74: 5539831331247536789
+    second: Jump
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -16,7 +28,10 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Avatar creation failed:\n\tAmbiguous Transform 'Hook_Player_MANDY:Hero_jnt_grp/Hook_Player_MANDY:Hero_Root/Hook_Player_MANDY:Hero_COG/Hook_Player_MANDY:Hero_Hips/Hook_Player_MANDY:Hero_RightUpLeg/Hook_Player_MANDY:Hero_RightLeg'
+      and 'Hook_Player_MANDY:Hero_jnt_grp/Hook_Player_MANDY:RightLegIKFK_jnt_grp/Hook_Player_MANDY:Hero_IK_RightUpLeg/Hook_Player_MANDY:Hero_RightLeg'
+      found in hierarchy for human bone 'RightLowerLeg'. Transform name mapped to
+      a human bone must be unique.\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,14 +39,130 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 89
+      lastFrame: 112
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 62
+      lastFrame: 86
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 68
+      lastFrame: 68.1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -80,7 +211,477 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Hero(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_geo_grp
+      parentName: Hero(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_geo
+      parentName: Hook_Player_MANDY:Hero_geo_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_bendinfo_grp
+      parentName: Hook_Player_MANDY:Hero_geo_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Body
+      parentName: Hook_Player_MANDY:Hero_bendinfo_grp
+      position: {x: -0.00097141974, y: -0.02063322, z: -0.102698304}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 22.416187, y: 22.416187, z: 22.416187}
+    - name: Hook_Player_MANDY:transform5
+      parentName: Hook_Player_MANDY:Body
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Gloves
+      parentName: Hook_Player_MANDY:Hero_bendinfo_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:R_Eyebrow_geo
+      parentName: Hook_Player_MANDY:Gloves
+      position: {x: -0.00097141974, y: -0.02063322, z: -0.102698304}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 22.416187, y: 22.416187, z: 22.416187}
+    - name: Hook_Player_MANDY:transform4
+      parentName: Hook_Player_MANDY:R_Eyebrow_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:L_Eyebrow_geo
+      parentName: Hook_Player_MANDY:Gloves
+      position: {x: -0.00097141974, y: -0.02063322, z: -0.102698304}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 22.416187, y: 22.416187, z: 22.416187}
+    - name: Hook_Player_MANDY:transform3
+      parentName: Hook_Player_MANDY:L_Eyebrow_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Eyebrows
+      parentName: Hook_Player_MANDY:Hero_bendinfo_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:RightGlove
+      parentName: Hook_Player_MANDY:Eyebrows
+      position: {x: 0.89838994, y: 1.5205837, z: -0.10762458}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:transform2
+      parentName: Hook_Player_MANDY:RightGlove
+      position: {x: -0.89838994, y: -1.5205837, z: 0.10762458}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:LeftGlove
+      parentName: Hook_Player_MANDY:Eyebrows
+      position: {x: -0.90033287, y: 1.5205837, z: -0.10688663}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:transform1
+      parentName: Hook_Player_MANDY:LeftGlove
+      position: {x: 0.90033287, y: -1.5205837, z: 0.10688663}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_jnt_grp
+      parentName: Hero(Clone)
+      position: {x: -0, y: -2.3665827e-32, z: 2.1316282e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_Root
+      parentName: Hook_Player_MANDY:Hero_jnt_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_COG
+      parentName: Hook_Player_MANDY:Hero_Root
+      position: {x: 0.000045394896, y: 0.9513809, z: -0.08961539}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_Hips
+      parentName: Hook_Player_MANDY:Hero_COG
+      position: {x: -2.1684043e-19, y: 2.842171e-16, z: -5.3290704e-17}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_LeftUpLeg
+      parentName: Hook_Player_MANDY:Hero_Hips
+      position: {x: -0.2800454, y: -0.072879486, z: -0.005884924}
+      rotation: {x: 0.50083303, y: 0.49916565, z: -0.50083303, w: -0.49916565}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Hook_Player_MANDY:Hero_LeftLeg
+      parentName: Hook_Player_MANDY:Hero_LeftUpLeg
+      position: {x: -0.30454695, y: -0.005728846, z: -7.105427e-17}
+      rotation: {x: -0.000000029802322, y: -0.000000029802322, z: 0.0073311627, w: -0.9999732}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Hook_Player_MANDY:Hero_LeftFoot
+      parentName: Hook_Player_MANDY:Hero_LeftLeg
+      position: {x: -0.48650473, y: 0.0057285107, z: 1.0658141e-16}
+      rotation: {x: 0.00000018355912, y: -0.00000026748387, z: 0.630779, w: 0.7759626}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: Hook_Player_MANDY:Hero_LeftWheel
+      parentName: Hook_Player_MANDY:Hero_LeftLeg
+      position: {x: -0.4179223, y: 0.11420604, z: -0.0037902994}
+      rotation: {x: 0.50000054, y: 0.49999946, z: -0.49999988, w: 0.50000006}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Hook_Player_MANDY:Hero_RightUpLeg
+      parentName: Hook_Player_MANDY:Hero_Hips
+      position: {x: 0.2800454, y: -0.072879486, z: -0.005884924}
+      rotation: {x: 0.49914294, y: -0.5008583, z: -0.4991402, w: 0.5008556}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Hook_Player_MANDY:Hero_RightLeg
+      parentName: Hook_Player_MANDY:Hero_RightUpLeg
+      position: {x: 0.3045475, y: 0.005728841, z: -0.000000027789175}
+      rotation: {x: 0.000022917988, y: -0.00000019371511, z: -0.00740926, w: 0.9999726}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Hook_Player_MANDY:Hero_RightFoot
+      parentName: Hook_Player_MANDY:Hero_RightLeg
+      position: {x: 0.4865051, y: -0.005728507, z: 0.00000029763896}
+      rotation: {x: -0.000019514824, y: 0.000015993191, z: 0.63518727, w: 0.7723582}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightWheel
+      parentName: Hook_Player_MANDY:Hero_RightLeg
+      position: {x: 0.4191629, y: -0.11497934, z: 0.0038866403}
+      rotation: {x: 0.4971323, y: 0.50282633, z: -0.49715757, w: 0.5028513}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
+    - name: Hook_Player_MANDY:Hero_Spine
+      parentName: Hook_Player_MANDY:Hero_COG
+      position: {x: -2.8146433e-13, y: 0.12779701, z: -0.0010181989}
+      rotation: {x: -1.4119487e-25, y: 2.482554e-14, z: -5.6874848e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_LeftCravicle
+      parentName: Hook_Player_MANDY:Hero_Spine
+      position: {x: -0.28449047, y: 0.33144277, z: 0.0076543125}
+      rotation: {x: 0.9982018, y: -0.008514065, z: 0.059333574, w: -0.00050607865}
+      scale: {x: 1, y: 1.0000004, z: 1.0000002}
+    - name: Hook_Player_MANDY:Hero_LeftShoulder
+      parentName: Hook_Player_MANDY:Hero_LeftCravicle
+      position: {x: -0.16961025, y: 8.5265126e-16, z: -9.237055e-16}
+      rotation: {x: -0.0005003828, y: -0.05933309, z: -0.008513729, w: 0.99820185}
+      scale: {x: 1.0000008, y: 0.9999999, z: 0.9900539}
+    - name: Hook_Player_MANDY:Hero_LeftArm
+      parentName: Hook_Player_MANDY:Hero_LeftShoulder
+      position: {x: -0.23161486, y: -4.6201476e-10, z: 0.002628052}
+      rotation: {x: 0.000000005820766, y: -0.0000009760261, z: -0.0000000019754225, w: 1}
+      scale: {x: 0.99568504, y: 1.0000004, z: 1.004359}
+    - name: Hook_Player_MANDY:Hero_LeftHand
+      parentName: Hook_Player_MANDY:Hero_LeftArm
+      position: {x: -0.3033172, y: 4.6201562e-10, z: -0.0026019113}
+      rotation: {x: -0.7068241, y: 0.02694468, z: 0.026944058, w: -0.7063623}
+      scale: {x: 0.9999489, y: 1.0000851, z: 0.9900202}
+    - name: Hook_Player_MANDY:Hero_LeftMiddleFinger1
+      parentName: Hook_Player_MANDY:Hero_LeftHand
+      position: {x: -0.14519922, y: 0.05980471, z: 0.035431203}
+      rotation: {x: 0.6968441, y: -0.14020933, z: 0.045587536, w: -0.7019056}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9900537}
+    - name: Hook_Player_MANDY:Hero_LeftMiddleFinger2
+      parentName: Hook_Player_MANDY:Hero_LeftMiddleFinger1
+      position: {x: -0.15656303, y: 0.000000011598557, z: -0.000019046738}
+      rotation: {x: -0.00003364682, y: -0.00004433095, z: -0.036268506, w: 0.99934214}
+      scale: {x: 1.0001752, y: 0.99982417, z: 0.99005336}
+    - name: Hook_Player_MANDY:Hero_LeftMiddleFinger3
+      parentName: Hook_Player_MANDY:Hero_LeftMiddleFinger2
+      position: {x: -0.1741383, y: -2.842171e-16, z: -1.7763568e-17}
+      rotation: {x: -0.9819595, y: -0.18909155, z: 0.000000010469418, w: 0.000000013634686}
+      scale: {x: 0.99865943, y: 1.0013479, z: 0.9999996}
+    - name: Hook_Player_MANDY:Hero_LeftThumb
+      parentName: Hook_Player_MANDY:Hero_LeftHand
+      position: {x: -0.12717319, y: -0.086829014, z: -0.040486325}
+      rotation: {x: 0.69596297, y: 0.1430562, z: 0.055120893, w: 0.70152134}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.99005336}
+    - name: Hook_Player_MANDY:Hero_LeftThumb2
+      parentName: Hook_Player_MANDY:Hero_LeftThumb
+      position: {x: -0.12098858, y: 1.1368684e-15, z: -1.6244782e-14}
+      rotation: {x: 0.00045692915, y: 0.014101792, z: -0.032383535, w: 0.9993759}
+      scale: {x: 0.99995065, y: 1.0000476, z: 1.000003}
+    - name: Hook_Player_MANDY:Hero_LeftIndexFinger1
+      parentName: Hook_Player_MANDY:Hero_LeftHand
+      position: {x: -0.14658074, y: -0.052979406, z: 0.035431203}
+      rotation: {x: 0.69684404, y: -0.14020944, z: 0.04558756, w: -0.70190567}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9900537}
+    - name: Hook_Player_MANDY:Hero_LeftIndexFinger2
+      parentName: Hook_Player_MANDY:Hero_LeftIndexFinger1
+      position: {x: -0.15656303, y: 0.000000011598559, z: -0.000019046738}
+      rotation: {x: -0.00003376602, y: -0.000044248984, z: -0.036268916, w: 0.9993421}
+      scale: {x: 1.0001752, y: 0.99982417, z: 0.99005336}
+    - name: Hook_Player_MANDY:Hero_LeftIndexFinger3
+      parentName: Hook_Player_MANDY:Hero_LeftIndexFinger2
+      position: {x: -0.1741383, y: 1.1368684e-15, z: -5.7731595e-17}
+      rotation: {x: -0.9819595, y: -0.18909155, z: 0.000000010469418, w: 0.000000013634686}
+      scale: {x: 0.99865943, y: 1.0013479, z: 0.9999996}
+    - name: Hook_Player_MANDY:LeftGLove_Stretch_jnt
+      parentName: Hook_Player_MANDY:Hero_LeftArm
+      position: {x: -0.39224806, y: -0.059593778, z: -0.0055474467}
+      rotation: {x: -1, y: 3.8733391e-10, z: 0.0000004359672, w: -0.000005707203}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Hook_Player_MANDY:Hero_RightCravicle
+      parentName: Hook_Player_MANDY:Hero_Spine
+      position: {x: 0.2844901, y: 0.33145073, z: 0.0076543125}
+      rotation: {x: -0.008527743, y: 0.99819976, z: 0.00050716964, w: -0.05936571}
+      scale: {x: 1.0000006, y: 1, z: 1.0000005}
+    - name: Hook_Player_MANDY:Hero_RightShoulder
+      parentName: Hook_Player_MANDY:Hero_RightCravicle
+      position: {x: -0.16952066, y: 0, z: 2.6645352e-17}
+      rotation: {x: -0.7058342, y: -0.04240478, z: -0.030339392, w: 0.7064556}
+      scale: {x: 1, y: 1.0000002, z: 1.000001}
+    - name: Hook_Player_MANDY:Hero_RightArm
+      parentName: Hook_Player_MANDY:Hero_RightShoulder
+      position: {x: -0.2316142, y: -1.4210854e-16, z: -2.842171e-16}
+      rotation: {x: 0.000000059604645, y: 0.000000018626451, z: -0.014002986, w: 0.999902}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightHand
+      parentName: Hook_Player_MANDY:Hero_RightArm
+      position: {x: -0.30331728, y: 4.352074e-16, z: 1.4210854e-16}
+      rotation: {x: -0.00000011572803, y: -0.037155814, z: 0.0000000171156, w: 0.9993095}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000002}
+    - name: Hook_Player_MANDY:Hero_RightMiddleFinger1
+      parentName: Hook_Player_MANDY:Hero_RightHand
+      position: {x: -0.1452012, y: -0.06040514, z: 0.035079997}
+      rotation: {x: -0.701788, y: -0.04679036, z: 0.1413282, w: 0.6966567}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightMiddleFinger2
+      parentName: Hook_Player_MANDY:Hero_RightMiddleFinger1
+      position: {x: -0.15656146, y: 8.282924e-11, z: 3.5527136e-17}
+      rotation: {x: -0.00000008940696, y: 0.000000100582824, z: -0.03531028, w: 0.9993764}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightMiddleFinger3
+      parentName: Hook_Player_MANDY:Hero_RightMiddleFinger2
+      position: {x: -0.17414324, y: 0, z: 3.5527136e-17}
+      rotation: {x: 0.18909183, y: -0.9819594, z: -0.00000011594475, w: 0.00000001015612}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000006}
+    - name: Hook_Player_MANDY:Hero_RightThumb
+      parentName: Hook_Player_MANDY:Hero_RightHand
+      position: {x: -0.12717581, y: 0.087701626, z: -0.04009}
+      rotation: {x: 0.70173967, y: -0.054400615, z: -0.14087231, w: 0.696245}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightThumb2
+      parentName: Hook_Player_MANDY:Hero_RightThumb
+      position: {x: -0.120981716, y: 0, z: 2.5135449e-15}
+      rotation: {x: -0.014102568, y: 0.0004567825, z: 0.9993762, w: 0.032374017}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999998}
+    - name: Hook_Player_MANDY:Hero_RightIndexFinger1
+      parentName: Hook_Player_MANDY:Hero_RightHand
+      position: {x: -0.14658266, y: 0.053511985, z: 0.035079997}
+      rotation: {x: -0.70178807, y: -0.04679035, z: 0.14132828, w: 0.6966567}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightIndexFinger2
+      parentName: Hook_Player_MANDY:Hero_RightIndexFinger1
+      position: {x: -0.15656146, y: 8.282882e-11, z: -1.7763568e-17}
+      rotation: {x: -0.000000029802315, y: 0.0000003948807, z: -0.03531071, w: 0.99937636}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightIndexFinger3
+      parentName: Hook_Player_MANDY:Hero_RightIndexFinger2
+      position: {x: -0.17414324, y: 2.842171e-16, z: 3.5527136e-17}
+      rotation: {x: 0.18909183, y: -0.9819594, z: -0.00000011594475, w: 0.00000001015612}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000006}
+    - name: Hook_Player_MANDY:RightGLove_Stretch_jnt
+      parentName: Hook_Player_MANDY:Hero_RightArm
+      position: {x: -0.39229828, y: -0.0007050298, z: 0.05959}
+      rotation: {x: 0.004287249, y: -0.70709383, z: 0.70709383, w: -0.0042872448}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Hook_Player_MANDY:Hero_Head
+      parentName: Hook_Player_MANDY:Hero_Spine
+      position: {x: 2.3392744e-16, y: 0.53046197, z: -0.085416496}
+      rotation: {x: -3.6379788e-10, y: -5.9463326e-14, z: 5.6871187e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:LeftEye
+      parentName: Hook_Player_MANDY:Hero_Head
+      position: {x: -0.19499299, y: 0.30265126, z: 0.47760963}
+      rotation: {x: -0.004514503, y: 0.0134382155, z: 0.00006067302, w: 0.9998995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:RightEye
+      parentName: Hook_Player_MANDY:Hero_Head
+      position: {x: 0.19490221, y: 0.30265126, z: 0.47760963}
+      rotation: {x: -0.0045145038, y: -0.013438218, z: -0.00006067303, w: 0.9998995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Mouth
+      parentName: Hook_Player_MANDY:Hero_Head
+      position: {x: -0, y: 0.18693778, z: 0.07249716}
+      rotation: {x: -0, y: -0, z: -2.1632631e-23, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:LeftArmIKFK_jnt_grp
+      parentName: Hook_Player_MANDY:Hero_jnt_grp
+      position: {x: -0, y: 2.3665827e-32, z: -2.1316282e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_LeftShoulder
+      parentName: Hook_Player_MANDY:LeftArmIKFK_jnt_grp
+      position: {x: -0.45191348, y: 1.4284284, z: -0.09341512}
+      rotation: {x: 0.9989509, y: -0.04365828, z: -0.000601863, w: -0.013811656}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_LeftArm
+      parentName: Hook_Player_MANDY:Hero_FK_LeftShoulder
+      position: {x: -0.23161486, y: 5.684342e-16, z: -0.0000000026788853}
+      rotation: {x: 4.6081786e-20, y: -0.0000010281334, z: -7.904627e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_LeftHand
+      parentName: Hook_Player_MANDY:Hero_FK_LeftArm
+      position: {x: -0.3033172, y: 2.842171e-16, z: 0.0000000026861053}
+      rotation: {x: 0.7071068, y: -5.5936467e-14, z: -5.5851848e-14, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_LeftShoulder
+      parentName: Hook_Player_MANDY:LeftArmIKFK_jnt_grp
+      position: {x: -0.45191348, y: 1.4284284, z: -0.09341512}
+      rotation: {x: 0.7410751, y: 0.61419237, z: 0.17999572, w: -0.20292123}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_LeftArm
+      parentName: Hook_Player_MANDY:Hero_IK_LeftShoulder
+      position: {x: -0.23161486, y: -4.6201507e-10, z: 0.0026019113}
+      rotation: {x: -0.000000022457236, y: -0.35182118, z: -0.000000059750725, w: 0.9360672}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_LeftHand
+      parentName: Hook_Player_MANDY:Hero_IK_LeftArm
+      position: {x: -0.3033172, y: 4.6201562e-10, z: -0.0026019113}
+      rotation: {x: 0.6759153, y: 0.067434974, z: -0.07474093, w: 0.7300718}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:RightArmIKFK_jnt_grp
+      parentName: Hook_Player_MANDY:Hero_jnt_grp
+      position: {x: -0, y: 2.3665827e-32, z: -2.1316282e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_RightShoulder
+      parentName: Hook_Player_MANDY:RightArmIKFK_jnt_grp
+      position: {x: 0.45197386, y: 1.4283537, z: -0.09341524}
+      rotation: {x: 0.56378454, y: 0.37729755, z: 0.66919905, w: 0.30325925}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_RightArm
+      parentName: Hook_Player_MANDY:Hero_IK_RightShoulder
+      position: {x: -0.2316142, y: -5.3290704e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0.36119154, w: 0.93249166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_RightHand
+      parentName: Hook_Player_MANDY:Hero_IK_RightArm
+      position: {x: -0.30331728, y: 2.842171e-16, z: 0}
+      rotation: {x: 0.038318224, y: -0.004777972, z: 0.0988147, w: 0.9943564}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_RightShoulder
+      parentName: Hook_Player_MANDY:RightArmIKFK_jnt_grp
+      position: {x: 0.45197386, y: 1.4283537, z: -0.09341524}
+      rotation: {x: -0.02570487, y: 0.6968273, z: 0.71587014, w: -0.036068603}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_RightArm
+      parentName: Hook_Player_MANDY:Hero_FK_RightShoulder
+      position: {x: -0.2316142, y: -3.5527136e-17, z: 0}
+      rotation: {x: -2.220446e-16, y: -1.0408342e-17, z: -0.014002911, w: 0.99990195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_RightHand
+      parentName: Hook_Player_MANDY:Hero_FK_RightArm
+      position: {x: -0.30331728, y: 2.4868996e-16, z: -5.684342e-16}
+      rotation: {x: -2.7755578e-16, y: -1.3010426e-17, z: 2.6020852e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:HandLocators
+      parentName: Hook_Player_MANDY:Hero_jnt_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:RightHandLocator
+      parentName: Hook_Player_MANDY:HandLocators
+      position: {x: 0.5381749, y: 0.940883, z: -0.15999576}
+      rotation: {x: 0.010474084, y: 0.00902343, z: -0.65269375, w: 0.7574957}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:LeftHandLocator
+      parentName: Hook_Player_MANDY:HandLocators
+      position: {x: -0.5382032, y: 0.9409245, z: -0.15999694}
+      rotation: {x: 0.010477723, y: -0.009020529, z: 0.65262854, w: 0.7575519}
+      scale: {x: 1, y: 1, z: 0.9900533}
+    - name: Hook_Player_MANDY:RightLegIKFK_jnt_grp
+      parentName: Hook_Player_MANDY:Hero_jnt_grp
+      position: {x: -0, y: 2.3665827e-32, z: -2.1316282e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_RightUpLeg
+      parentName: Hook_Player_MANDY:RightLegIKFK_jnt_grp
+      position: {x: 0.28009078, y: 0.8785014, z: -0.09550031}
+      rotation: {x: 0.49914294, y: -0.5008583, z: -0.4991402, w: 0.5008556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_RightLeg
+      parentName: Hook_Player_MANDY:Hero_FK_RightUpLeg
+      position: {x: 0.3045475, y: 0.005728841, z: -0.000000027789175}
+      rotation: {x: 0.000022902856, y: -0.00000021124278, z: -0.007409229, w: 0.9999726}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_RightFoot
+      parentName: Hook_Player_MANDY:Hero_FK_RightLeg
+      position: {x: 0.4865051, y: -0.005728507, z: 0.00000029763896}
+      rotation: {x: -0.000019498875, y: 0.00001598517, z: 0.63518727, w: 0.7723582}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_RightUpLeg
+      parentName: Hook_Player_MANDY:RightLegIKFK_jnt_grp
+      position: {x: 0.28009078, y: 0.8785014, z: -0.09550031}
+      rotation: {x: 0.44702867, y: -0.547876, z: -0.4470255, w: 0.5478737}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightLeg
+      parentName: Hook_Player_MANDY:Hero_IK_RightUpLeg
+      position: {x: 0.3045475, y: 0.005728841, z: -0.000000027789175}
+      rotation: {x: 0.00002125549, y: -0.000004675164, z: -0.16778883, w: 0.985823}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_RightFoot
+      parentName: Hook_Player_MANDY:Hero_RightLeg
+      position: {x: 0.4865051, y: -0.005728507, z: 0.00000029763896}
+      rotation: {x: -0.000018200553, y: 0.000016699823, z: 0.68172944, w: 0.7316044}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:LeftLegIKFK_jnt_grp
+      parentName: Hook_Player_MANDY:Hero_jnt_grp
+      position: {x: -0, y: 2.3665827e-32, z: -2.1316282e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_LeftUpLeg
+      parentName: Hook_Player_MANDY:LeftLegIKFK_jnt_grp
+      position: {x: -0.28, y: 0.8785014, z: -0.09550031}
+      rotation: {x: 0.50083303, y: 0.49916565, z: -0.50083303, w: -0.49916565}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_LeftLeg
+      parentName: Hook_Player_MANDY:Hero_FK_LeftUpLeg
+      position: {x: -0.30454695, y: -0.005728846, z: -3.5527136e-17}
+      rotation: {x: 1.26826585e-26, y: -5.551115e-17, z: -0.007331131, w: 0.9999731}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_FK_LeftFoot
+      parentName: Hook_Player_MANDY:Hero_FK_LeftLeg
+      position: {x: -0.48650473, y: 0.0057285107, z: 7.105427e-17}
+      rotation: {x: 0.0000001879739, y: -0.00000023123906, z: 0.6307789, w: 0.7759626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_LeftUpLeg
+      parentName: Hook_Player_MANDY:LeftLegIKFK_jnt_grp
+      position: {x: -0.28, y: 0.8785014, z: -0.09550031}
+      rotation: {x: 0.5478722, y: 0.4470303, z: -0.5478722, w: -0.4470303}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_IK_LeftLeg
+      parentName: Hook_Player_MANDY:Hero_IK_LeftUpLeg
+      position: {x: -0.30454695, y: -0.005728846, z: -3.6799198e-17}
+      rotation: {x: 1.1357432e-16, y: 6.908883e-16, z: -0.16777937, w: 0.9858246}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Hero_LeftFoot
+      parentName: Hook_Player_MANDY:Hero_IK_LeftLeg
+      position: {x: -0.48650473, y: 0.0057285107, z: 3.6799198e-17}
+      rotation: {x: 0.0000001733095, y: -0.00000024242422, z: 0.6775718, w: 0.73545665}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:General_con_grp
+      parentName: Hero(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:General_con
+      parentName: Hook_Player_MANDY:General_con_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Walk_con_grp
+      parentName: Hook_Player_MANDY:General_con
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hook_Player_MANDY:Walk_con
+      parentName: Hook_Player_MANDY:Walk_con_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

@@ -8,6 +8,7 @@ public class Hero : MonoBehaviour {
         Vector2 input;
 
     [Header("Components")]
+        public Camera mCamera;
         public Rigidbody rb;
         public Animator animtr;
         public float playerHeight;
@@ -33,6 +34,7 @@ public class Hero : MonoBehaviour {
         public bool grounded;
 
     void Start() {
+        mCamera = Camera.main;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
@@ -50,8 +52,9 @@ public class Hero : MonoBehaviour {
         else
             rb.drag = 0;
 
-        Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
-        orient.forward = viewDir;
+        //Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
+        //orient.forward = viewDir.normalized;
+        orient.eulerAngles = new Vector3(0, mCamera.transform.eulerAngles.y, 0);
 
         Vector3 inputDir = orient.forward * input.y + orient.right * input.x;
         if (inputDir != Vector3.zero)
@@ -69,7 +72,7 @@ public class Hero : MonoBehaviour {
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
-        animtr.SetBool("run",input.x + input.y != 0);
+        //animtr.SetBool("run",input.x + input.y != 0);
     }
 
     private void Move() {
